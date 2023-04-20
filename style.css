@@ -1,52 +1,65 @@
 /* Basic Style */
+
 .page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .header-img {
   width: 100%;
 }
+
 .header-link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
+
   .header {
     text-align: center;
   }
+
 }
+
 .todo {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .task-input .task-name {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
+
 .task-adding {
   display: flex;
 }
+
 #incomplete-tasks,
 #completed-tasks {
   margin:0;
   padding: 0px;
 }
-.task{
+
+.task {
   list-style:none;
 }
+
 .task-input,
-.task-edit{
+.task-edit {
   outline:none;
 }
+
 .task-edit,
 .task-delete {
   background: none;
@@ -57,10 +70,13 @@
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .task-edit:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
+
 .todo-title {
   color: #333;
   font-weight: 700;
@@ -70,6 +86,7 @@
   margin: 0;
   text-transform: uppercase;
 }
+
 .task-input {
   margin: 0;
   font-size: 18px;
@@ -83,17 +100,20 @@
   color: #888;
   width: 318px;
 }
+
 .task-input:focus {
   color: #333;
 }
 
 /* New Task */
+
 .headline {
   display: block;
   margin: 0 0 20px;
 }
 
 /* Task list */
+
 .task {
   overflow: hidden;
   padding: 20px 0;
@@ -103,6 +123,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .task > * {
   vertical-align: middle;
 }
@@ -110,32 +131,38 @@
 .task-check {
   margin: 0 10px;
 }
+
 .task-name {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .entry {
   width: 226px
 }
+
 .delete-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .delete-img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks .task-name{
+
+#completed-tasks .task-name {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.hidden{
+
+.hidden {
   display:none
 }
 
