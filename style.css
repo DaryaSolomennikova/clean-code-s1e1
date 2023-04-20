@@ -35,7 +35,8 @@
   margin: 0 auto 0;
 }
 
-.task-input .task-name {
+.task-input,
+.task-name {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -49,10 +50,6 @@
 #completed-tasks {
   margin: 0;
   padding: 0px;
-}
-
-.task {
-  list-style: none;
 }
 
 .task-input,
@@ -118,7 +115,7 @@
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
+  list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
