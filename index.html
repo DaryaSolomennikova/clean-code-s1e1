@@ -5,15 +5,15 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
-  <body>
+  <body class="page">
     <div class="header">
-        <img class="header" src="./eisenhower-matrix.jpg">
+        <img class="header-img" src="./eisenhower-matrix.jpg">
         <a class="header-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </div>
     <div class="todo">
-      <p class="todo-item"><label class="todo-title" for="new-task">Add Item</label>
+      <p class="todo-item"><label class="todo-title headline" for="new-task">Add Item</label>
         <div class="task-adding">
-            <input id="new-task" class="task-input" type="text"><button>Add</button>
+            <input id="new-task" class="task-input" type="text"><button class="task-edit">Add</button>
         </div>
       </p>
       <h3 class="todo-title">Todo</h3>
@@ -21,19 +21,19 @@
           <li class="task">
               <input type="checkbox" class="task-check">
               <label class="task-name">Pay Bills</label>
-              <input type="text" class="task-input">
+              <input type="text" class="task-input hidden">
               <button class="task-edit">Edit</button>
               <button class="task-delete">
-                  <img src="./remove.svg">
+                  <img class="delete-img" src="./remove.svg">
               </button>
           </li>
           <li class="task edit-mode">
               <input type="checkbox" class="task-check">
               <label class="task-name">Go Shopping</label>
-              <input type="text" value="Go Shopping" class="task-input">
+              <input type="text" value="Go Shopping" class="task-input entry hidden">
               <button class="task-edit">Save</button>
               <button class="task-delete">
-                  <img src="./remove.svg">
+                  <img class="delete-img" src="./remove.svg">
               </button>
           </li>
       </ul>
@@ -42,10 +42,10 @@
           <li class="task">
               <input type="checkbox" class="task-check" checked>
               <label class="task-name">See the Doctor</label>
-              <input type="text" class="task-input">
+              <input type="text" class="task-input entry hidden">
               <button class="task-edit">Edit</button>
               <button class="task-delete">
-                  <img src="./remove.svg">
+                  <img class="delete-img" src="./remove.svg">
               </button>
           </li>
       </ul>
