@@ -6,18 +6,21 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body class="page">
-    <div class="header">
-        <img class="header-img" src="./eisenhower-matrix.jpg">
-        <a class="header-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="todo">
-      <p class="todo-item"><label class="todo-title headline" for="new-task">Add Item</label>
+    <article>
+      <header class="header">
+          <img class="header-img" src="./eisenhower-matrix.jpg">
+          <a class="header-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+      </header>
+    </article>
+    <main class="todo">
+      <section class="section-add"><label class="todo-title headline" for="new-task">Add Item</label>
         <div class="task-adding">
             <input id="new-task" class="task-input" type="text"><button class="task-edit">Add</button>
         </div>
-      </p>
-      <h3 class="todo-title">Todo</h3>
-      <ul id="incomplete-tasks">
+      </section>
+      <section class="section-incompleted">
+        <h3 class="todo-title">Todo</h3>
+        <ul id="incomplete-tasks">
           <li class="task">
               <input type="checkbox" class="task-check">
               <label class="task-name">Pay Bills</label>
@@ -37,8 +40,10 @@
               </button>
           </li>
       </ul>
-      <h3 class="todo-title">Completed</h3>
-      <ul id="completed-tasks">
+      </section>
+      <section class="section-completed">
+        <h3 class="todo-title">Completed</h3>
+        <ul id="completed-tasks">
           <li class="task">
               <input type="checkbox" class="task-check" checked>
               <label class="task-name">See the Doctor</label>
@@ -49,7 +54,8 @@
               </button>
           </li>
       </ul>
-    </div>
+      </section>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
