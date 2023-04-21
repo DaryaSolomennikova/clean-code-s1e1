@@ -8,49 +8,49 @@
   <body class="page">
     <article>
       <header class="header">
-          <img class="header-img" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
-          <a class="header-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+          <img class="header__img" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
+          <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
       </header>
     </article>
     <main class="todo">
-      <section class="section-add"><label class="todo-title headline" for="new-task">Add Item</label>
-        <div class="task-adding">
-            <input id="new-task" class="task-input" type="text"><button class="task-edit">Add</button>
+      <section class="todo__section-add"><label class="todo__title headline" for="new-task">Add Item</label>
+        <div class="todo__task-adding">
+            <input id="new-task" class="todo__task-input" type="text"><button class="todo__task-edit">Add</button>
         </div>
       </section>
-      <section class="section-incompleted">
-        <h3 class="todo-title">Todo</h3>
-        <ul id="incomplete-tasks">
-          <li class="task">
-              <input type="checkbox" class="task-check">
-              <label class="task-name">Pay Bills</label>
-              <input type="text" class="task-input hidden">
-              <button class="task-edit">Edit</button>
-              <button class="task-delete">
-                  <img class="delete-img" src="./remove.svg" alt="btn-delete">
+      <section class="todo__section-incompleted">
+        <h3 class="todo__title">Todo</h3>
+        <ul id="incomplete-tasks" class="todo__task-list">
+          <li class="todo__task">
+              <input type="checkbox" class="todo__task-check">
+              <label class="todo__task-name">Pay Bills</label>
+              <input type="text" class="todo__task-input hidden">
+              <button class="todo__task-edit">Edit</button>
+              <button class="todo__task-delete">
+                  <img class="todo__delete-img" src="./remove.svg" alt="btn-delete">
               </button>
           </li>
-          <li class="task edit-mode">
-              <input type="checkbox" class="task-check">
-              <label class="task-name">Go Shopping</label>
-              <input type="text" value="Go Shopping" class="task-input entry hidden">
-              <button class="task-edit">Save</button>
-              <button class="task-delete">
-                  <img class="delete-img" src="./remove.svg" alt="btn-delete">
+          <li class="todo__task edit-mode">
+              <input type="checkbox" class="todo__task-check">
+              <label class="todo__task-name">Go Shopping</label>
+              <input type="text" value="Go Shopping" class="todo__task-input todo__entry hidden">
+              <button class="todo__task-edit">Save</button>
+              <button class="todo__task-delete">
+                  <img class="todo__delete-img" src="./remove.svg" alt="btn-delete">
               </button>
           </li>
       </ul>
       </section>
-      <section class="section-completed">
-        <h3 class="todo-title">Completed</h3>
-        <ul id="completed-tasks">
-          <li class="task">
-              <input type="checkbox" class="task-check" checked>
-              <label class="task-name">See the Doctor</label>
-              <input type="text" class="task-input entry hidden">
-              <button class="task-edit">Edit</button>
-              <button class="task-delete">
-                  <img class="delete-img" src="./remove.svg" alt="btn-delete">
+      <section class="todo__section-completed">
+        <h3 class="todo__title">Completed</h3>
+        <ul id="completed-tasks" class="todo__task-list">
+          <li class="todo__task">
+              <input type="checkbox" class="todo__task-check" checked>
+              <label class="todo__task-name">See the Doctor</label>
+              <input type="text" class="todo__task-input todo__entry hidden">
+              <button class="todo__task-edit">Edit</button>
+              <button class="todo__task-delete">
+                  <img class="todo__delete-img"  src="./remove.svg" alt="btn-delete">
               </button>
           </li>
       </ul>
